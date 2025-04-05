@@ -105,7 +105,8 @@ public class PdfView extends PDFView implements OnPageChangeListener,OnLoadCompl
         TopChangeEvent tce = new TopChangeEvent(surfaceId, getId(), event);
 
         if (dispatcher != null) {
-            dispatcher.dispatchEvent(tce);
+            // dispatcher.dispatchEvent(tce);
+            new Handler(Looper.getMainLooper()).postDelayed(() -> dispatcher.dispatchEvent(tce), 10);
         }
 
 //        ReactContext reactContext = (ReactContext)this.getContext();
