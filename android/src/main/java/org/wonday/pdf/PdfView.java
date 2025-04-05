@@ -12,6 +12,8 @@ import java.io.File;
 
 import android.content.ContentResolver;
 import android.content.Context;
+import android.os.Handler;
+import android.os.Looper;
 import android.util.SizeF;
 import android.view.View;
 import android.view.ViewGroup;
